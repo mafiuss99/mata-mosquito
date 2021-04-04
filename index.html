@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosquito</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="splash-screen" id="spashScreen">
+            <img src="img/mosquito.png" alt=""  class="mosquito-animado">
+        </div>
+
+        <div class="sessao" id="sessaoHome">
+            <div class="home" id="home">
+                <div class="logo">
+                    <img src="img/mosquito.png" alt="" class="mosquito-animado-home">
+                    <h2><span>Mata</span><br>Mosquito</h2>
+                </div>
+                
+                <button id="start" onclick="loadModalCadastro()">Começar</button>
+                <button id="start">Ranking</button>
+    
+                <p class="copyright">
+                    Copyright 2021 | Todos os direitos reservados
+                </p>
+            </div>
+        </div>
+
+        <div class="sessao" id="sessaoGame">
+            <div class="quadro" id="quadro">
+                <div class="mosquito" id="mosquito">
+                    <img src="img/mosquito.png" alt="mosquito">
+                </div>
+            </div>
+
+            <div class="infos">
+                <input hidden id="identificadorUser" type="number">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="modal-comecar" id="modalComecar">
+        <div class="modal-comecar-bg" id="modalComecarBg">
+
+        </div>
+        <div class="modal-comecar-content" id="modalComecarContat">
+            <div class="modal-comecar-box" id="modalcomecar">
+                <div class="modal-comecar-box-body">
+                    <input type="name" id="nomeUsuario" placeholder="Digite o seu nome">
+                    <div class="buttons-modal-comecar-body">
+                        <button class="cadastrar-jogador" onclick="cadastrar()">Começar</button>
+                        <button class="cadastrar-jogador" onclick="closeModalCadastro()">Cancelar</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>

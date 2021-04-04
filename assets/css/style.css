@@ -1,0 +1,192 @@
+html {
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    
+}
+
+h1, h2, h3, h4, h5 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.active {
+    display: block !important;
+}
+
+.sessao {
+    display: none;
+}
+
+.splash-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.splash-screen img {
+    width: 66px;
+    position: relative;
+    transition: .3s;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    background: #a83b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px 17px;
+}
+
+.home .logo {
+    height: auto;
+}
+
+.home .logo img{
+    width: 230px;
+    position: relative;
+    transition: .3s;
+}
+
+.logo h2 {
+    text-transform: uppercase;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+button#start {
+    width: 100%;
+    font-size: 25px;
+    padding: 16px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    border: 5px solid;
+}
+
+.copyright {
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    /* padding-top: 20px; */
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 9px;
+    text-align: center;
+}
+
+.quadro {
+    max-height: 600px;
+    max-width: 600px;
+    background-color: white;
+    border: 10px solid black;
+    min-width: 300px;
+    min-height: 300px;
+    width: 100%;
+    height: 100%;
+}
+.app .quadro .mosquito {
+    position: relative;
+    transition: .8s;
+    border: none;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app .quadro .mosquito img {
+    width: 50px;
+}
+
+.modal-comecar {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    text-align: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.modal-comecar-bg {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    position: fixed;
+}
+
+.modal-comecar-content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-comecar-box {
+    background: white;
+    padding: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    /* display: flex; */
+    flex-direction: column;
+    border: 5px solid;
+}
+
+.modal-comecar-box-header {
+    padding-bottom: 13px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.modal-comecar-box-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-comecar-box-body input {
+    margin-bottom: 13px;
+    border: 5px solid;
+    height: 33px;
+    font-size: 18px;
+}
+
+.cadastrar-jogador {
+    font-size: 22px;
+    border: 5px solid;
+}
