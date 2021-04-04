@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mosquito</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/fontawesome/all.min.css">
+    <script defer type="text/javascript" src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -24,6 +25,7 @@
                 
                 <button id="start" onclick="loadModalCadastro()">Começar</button>
                 <button id="start">Ranking</button>
+                <button id="start">Sobre</button>
     
                 <p class="copyright">
                     Copyright 2021 | Todos os direitos reservados
@@ -33,15 +35,38 @@
 
         <div class="sessao" id="sessaoGame">
         <div class="game">
+            <div class="infos">
+                <input hidden id="identificadorUser" type="number" value="0">
+                <div class="users-info">
+                    <ul>
+                        <li id="usuarioName">
+                            Usuário: <span></span>
+                        </li>
+                        <li id="Tempo">
+                            Tempo: <span></span>
+                        </li>
+                        <li id="usuarioPontos">
+                            Pontos: <span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buttons-info">
+                    <ul>
+                        <li>
+                            <button class="button-sair-game" id="buttonSair" onclick="">Sair</button>
+                        </li>
+                        <li>
+                            <button class="button-som"><i class="fas fa-volume-up"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="quadro" id="quadro">
                 <div class="mosquito" id="mosquito">
                     <img src="img/mosquito.png" alt="mosquito">
                 </div>
             </div>
 
-            <div class="infos">
-                <input hidden id="identificadorUser" type="number">
-            </div>
         </div>
 
             
@@ -59,6 +84,26 @@
                     <input type="name" id="nomeUsuario" placeholder="Digite o seu nome">
                     <div class="buttons-modal-comecar-body">
                         <button class="cadastrar-jogador" onclick="cadastrar()">Começar</button>
+                        <button class="cadastrar-jogador" onclick="closeModalCadastro()">Cancelar</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-sair" id="modalSair">
+        <div class="modal-sair-bg" id="modalSairBg">
+
+        </div>
+        <div class="modal-sair-content" id="modalSairContat">
+            <div class="modal-sair-box" id="modalsair">
+                <div class="modal-sair-box-body">
+                    <p>Tem certeza que deseja sair ?</p>
+                    <span>Pontuação atual: </span>
+                    <div class="buttons-modal-comecar-body">
+                        <button class="cadastrar-jogador" onclick="cadastrar()">Sair</button>
                         <button class="cadastrar-jogador" onclick="closeModalCadastro()">Cancelar</button>
                     </div>
                     
