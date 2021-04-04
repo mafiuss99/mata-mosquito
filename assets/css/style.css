@@ -109,6 +109,13 @@ button#start {
     width: 100%;
     height: 100%;
 }
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .app .quadro .mosquito {
     position: relative;
     transition: .8s;

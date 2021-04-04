@@ -51,7 +51,7 @@ function loadGame(){
 
     document.getElementById("sessaoGame").classList.add("active");
 
-    voar(400)
+    voar(500)
 
 }
 
@@ -68,8 +68,8 @@ function voar(velocidade){
     var mosquito = document.getElementById("mosquito");
     
     var voador = setInterval(function(){
-        let px = Math.random()*500 + "px";
-        let py = Math.random()*500 + "px";
+        let px = Math.random()*300 + "px";
+        let py = Math.random()*300 + "px";
 
         mosquito.style.top = py;
         mosquito.style.left = px;
