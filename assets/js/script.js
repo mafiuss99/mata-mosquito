@@ -107,7 +107,7 @@ function voar(velocidade, reset=false){
 }   
 
 function matar(paremeter, sair = false){
-    buttonSair.removeAttribute("onclick");
+    mosquito.removeAttribute("onclick");
     audio.pause();
 
     clearInterval(paremeter);
