@@ -1,6 +1,6 @@
 var pontuacoes = [];
 var audio = new Audio('audio/zumbido.mp3');
-var velocidade = 600;
+var velocidade = 300;
 var idUser = document.getElementById("identificadorUser").value;
 var mosquito = document.getElementById("mosquito");
 var logo =  document.querySelector(".mosquito-animado");
