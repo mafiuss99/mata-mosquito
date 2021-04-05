@@ -1,6 +1,6 @@
 var pontuacoes = [];
 var audio = new Audio('audio/zumbido.mp3');
-var velocidade = 300;
+var velocidade = 600;
 var idUser = document.getElementById("identificadorUser").value;
 var mosquito = document.getElementById("mosquito");
 var logo =  document.querySelector(".mosquito-animado");
@@ -108,12 +108,12 @@ function voar(velocidade, reset=false){
 
 function matar(paremeter, sair = false){
     mosquito.removeAttribute("onclick");
+
     audio.pause();
 
     clearInterval(paremeter);
 
     if(sair == false){
-        var mosquito = document.getElementById("mosquito");
         mosquito.classList.add("morto");
         pontuacoes[idUser].usuarioPontos += 200;
         nextLevel(true);
