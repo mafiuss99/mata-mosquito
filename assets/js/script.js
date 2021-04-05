@@ -107,17 +107,16 @@ function voar(velocidade, reset=false){
 }   
 
 function matar(paremeter, sair = false){
+    buttonSair.removeAttribute("onclick");
     audio.pause();
 
     clearInterval(paremeter);
-
-    
 
     if(sair == false){
         var mosquito = document.getElementById("mosquito");
         mosquito.classList.add("morto");
         pontuacoes[idUser].usuarioPontos += 200;
-        nextLevel(true)
+        nextLevel(true);
     }
     
 }
