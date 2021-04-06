@@ -25,6 +25,13 @@ h1, h2, h3, h4, h5 {
     height: 100%;
     left: 0;
     top: 0;
+    background: #a83b3b;
+}
+
+.sessao > div {
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .splash-screen {
@@ -48,11 +55,6 @@ h1, h2, h3, h4, h5 {
 .app {
     width: 100%;
     height: 100%;
-}
-
-.home,
-.game  {
-    background: #a83b3b;
 }
 
 .home {
