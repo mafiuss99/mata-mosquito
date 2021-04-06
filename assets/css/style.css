@@ -84,8 +84,6 @@ h1, h2, h3, h4, h5 {
     font-size: 45px;
     margin-bottom: 20px;
     font-weight: bold;
-    -webkit-text-stroke-width: 3px;
--webkit-text-stroke-color: #000;
 }
 
 .logo h2 span {
@@ -100,7 +98,8 @@ button#start {
     padding: 10px;
     text-transform: uppercase;
     margin-bottom: 14px;
-    border: 5px solid;
+    border: none;
+    border-radius: 17px;
 }
 
 .copyright {
